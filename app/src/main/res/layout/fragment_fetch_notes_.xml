@@ -1,0 +1,154 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.niranjan.smartnotes.Fetch_notes_Fragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="?attr/colorAccent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="56dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Search Notes"
+                android:gravity="left"
+                android:textStyle="italic"
+                android:textSize="20dip"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:layout_height="wrap_content"
+                android:text="Department"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textSize="16dip"/>
+
+                <Spinner   android:id="@+id/spinner_department"
+                    android:layout_width="125dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:layout_height="wrap_content"
+
+                    android:spinnerMode="dropdown">
+                </Spinner>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:layout_height="wrap_content"
+                android:text="Semester"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textSize="16dip"/>
+            <Spinner
+                android:id="@+id/spinner_semester"
+                android:layout_width="125dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown">
+            </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:layout_height="wrap_content"
+                android:text="Year"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textSize="16dip"/>
+
+            <Spinner   android:id="@+id/spinner_year"
+                android:layout_width="125dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:layout_height="wrap_content"
+
+                android:spinnerMode="dropdown">
+            </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textSize="16dip"/>
+            <Spinner   android:id="@+id/spinner_subject"
+                android:layout_width="125dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:layout_height="wrap_content"
+
+                android:spinnerMode="dropdown">
+            </Spinner>
+        </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_search_notes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:text="Search"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
